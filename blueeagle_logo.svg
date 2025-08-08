@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 256" width="2048" height="1024">
+  <title>BLUEEAGLE Logo - Pixelated Dark Blue Eagle</title>
+  <desc>An emblem of a right-facing eagle with wings spread wide, rendered in slightly pixelated dark blue shades.</desc>
+
+  <defs>
+    <style>
+      .pixel { shape-rendering: crispEdges; }
+    </style>
+  </defs>
+
+  <!-- Transparent background -->
+  <rect x="0" y="0" width="512" height="256" fill="none" />
+
+  <!-- Palette reference (not rendered) -->
+  <!--
+    darkest: #0B1D39
+    deep:    #0E2E5E
+    dark:    #153E7A
+    mid:     #1F4F99
+    light:   #2B63B8
+    eye:     #DCEBFF
+    eye2:    #6FA8FF
+  -->
+
+  <g id="eagle" class="pixel">
+    <!-- LEFT WING (upper rows) -->
+    <rect x="64"  y="56"  width="152" height="8" fill="#0E2E5E"/>
+    <rect x="80"  y="64"  width="144" height="8" fill="#103362"/>
+    <rect x="88"  y="72"  width="136" height="8" fill="#153E7A"/>
+    <rect x="96"  y="80"  width="128" height="8" fill="#1A4587"/>
+    <rect x="104" y="88"  width="120" height="8" fill="#1F4F99"/>
+    <rect x="112" y="96"  width="112" height="8" fill="#255CAD"/>
+    <rect x="120" y="104" width="104" height="8" fill="#2B63B8"/>
+
+    <!-- LEFT WING (lower rows / feather taper) -->
+    <rect x="128" y="112" width="96"  height="8" fill="#224B8F"/>
+    <rect x="136" y="120" width="88"  height="8" fill="#1B3F7C"/>
+    <rect x="144" y="128" width="80"  height="8" fill="#123665"/>
+    <rect x="152" y="136" width="72"  height="8" fill="#0E2E5E"/>
+
+    <!-- RIGHT WING (upper rows) -->
+    <rect x="264" y="56"  width="152" height="8" fill="#0E2E5E"/>
+    <rect x="264" y="64"  width="144" height="8" fill="#103362"/>
+    <rect x="264" y="72"  width="136" height="8" fill="#153E7A"/>
+    <rect x="264" y="80"  width="128" height="8" fill="#1A4587"/>
+    <rect x="264" y="88"  width="120" height="8" fill="#1F4F99"/>
+    <rect x="264" y="96"  width="112" height="8" fill="#255CAD"/>
+    <rect x="264" y="104" width="104" height="8" fill="#2B63B8"/>
+
+    <!-- RIGHT WING (lower rows / feather taper) -->
+    <rect x="264" y="112" width="96"  height="8" fill="#224B8F"/>
+    <rect x="264" y="120" width="88"  height="8" fill="#1B3F7C"/>
+    <rect x="264" y="128" width="80"  height="8" fill="#123665"/>
+    <rect x="264" y="136" width="72"  height="8" fill="#0E2E5E"/>
+
+    <!-- BODY CORE -->
+    <rect x="224" y="88"  width="56" height="16" fill="#1F4F99"/>
+    <rect x="232" y="104" width="64" height="40" fill="#0E2E5E"/>
+    <rect x="240" y="144" width="40" height="16" fill="#0B1D39"/>
+
+    <!-- TAIL FEATHERS (slightly pixel-stepped) -->
+    <rect x="216" y="152" width="16" height="8" fill="#103362"/>
+    <rect x="208" y="160" width="24" height="8" fill="#153E7A"/>
+    <rect x="216" y="168" width="16" height="8" fill="#103362"/>
+
+    <!-- NECK / SHOULDER TRANSITION -->
+    <rect x="288" y="104" width="8"  height="24" fill="#153E7A"/>
+    <rect x="296" y="104" width="8"  height="24" fill="#1F4F99"/>
+
+    <!-- HEAD (right-facing) -->
+    <rect x="304" y="96"  width="24" height="24" fill="#255CAD"/>
+    <rect x="328" y="108" width="12" height="8"  fill="#2B63B8"/>
+
+    <!-- Eye (looking right) -->
+    <rect x="320" y="104" width="4" height="4" fill="#DCEBFF"/>
+    <rect x="322" y="106" width="2" height="2" fill="#6FA8FF"/>
+
+    <!-- Pixel accents for subtle jagged edges -->
+    <rect x="112" y="60" width="8" height="8" fill="#0B1D39" opacity="0.4"/>
+    <rect x="176" y="92" width="8" height="8" fill="#0B1D39" opacity="0.35"/>
+    <rect x="376" y="84" width="8" height="8" fill="#0B1D39" opacity="0.35"/>
+    <rect x="296" y="152" width="8" height="8" fill="#0B1D39" opacity="0.35"/>
+  </g>
+
+  <!-- Subtle brand label (non-intrusive, optional to remove) -->
+  <g aria-hidden="true" fill="#0E2E5E" opacity="0.75">
+    <text x="8" y="244" font-family="'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif" font-size="12" letter-spacing="2" >BLUEEAGLE</text>
+  </g>
+</svg>
