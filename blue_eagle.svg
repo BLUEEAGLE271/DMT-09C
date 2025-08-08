@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="1600" height="1200">
+  <defs>
+    <linearGradient id="wingBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="60%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="bodyBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#0b1324" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="100%" height="100%" fill="none"/>
+
+  <!-- Left wing -->
+  <path filter="url(#softShadow)"
+        d="M 400 310
+           C 320 270, 230 230, 110 260
+           C 160 285, 150 330, 205 345
+           C 150 370, 185 405, 255 395
+           C 210 425, 280 450, 340 430
+           C 320 470, 370 480, 395 450
+           Z"
+        fill="url(#wingBlue)"
+        stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Right wing (mirror) -->
+  <path filter="url(#softShadow)"
+        d="M 400 310
+           C 480 270, 570 230, 690 260
+           C 640 285, 650 330, 595 345
+           C 650 370, 615 405, 545 395
+           C 590 425, 520 450, 460 430
+           C 480 470, 430 480, 405 450
+           Z"
+        fill="url(#wingBlue)"
+        stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Tail -->
+  <g filter="url(#softShadow)">
+    <polygon points="380,455 400,520 420,455" fill="#1e40af" stroke="#0f172a" stroke-width="4"/>
+    <polygon points="372,470 400,540 428,470" fill="#1d4ed8" opacity="0.7"/>
+  </g>
+
+  <!-- Body -->
+  <path filter="url(#softShadow)"
+        d="M 400 310
+           L 435 420
+           Q 400 505, 365 420
+           Z"
+        fill="url(#bodyBlue)"
+        stroke="#0f172a" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Head and neck -->
+  <path d="M 395 305 C 420 300, 450 300, 470 310 C 475 315, 472 325, 465 328 C 450 335, 430 340, 415 338 C 405 336, 398 330, 395 320 Z"
+        fill="#60a5fa" stroke="#0f172a" stroke-width="4"/>
+  <circle cx="418" cy="305" r="24" fill="#93c5fd" stroke="#0f172a" stroke-width="4"/>
+
+  <!-- Eye -->
+  <circle cx="426" cy="304" r="5" fill="#0f172a"/>
+  <circle cx="425" cy="302" r="1.8" fill="#ffffff" opacity="0.85"/>
+
+  <!-- Beak -->
+  <polygon points="440,308 468,314 442,322" fill="#f59e0b" stroke="#b45309" stroke-width="3"/>
+  <path d="M 468 314 Q 474 316, 476 318 Q 468 320, 460 318" fill="#fbbf24" opacity="0.8"/>
+
+  <!-- Chest accent -->
+  <path d="M 398 360 Q 400 380, 390 405" fill="none" stroke="#93c5fd" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Feather accents -->
+  <g stroke="#93c5fd" stroke-width="4" stroke-linecap="round" opacity="0.7">
+    <path d="M 285 360 Q 300 370, 320 365" fill="none"/>
+    <path d="M 520 360 Q 505 370, 485 365" fill="none"/>
+    <path d="M 250 335 Q 270 345, 295 342" fill="none"/>
+    <path d="M 550 335 Q 530 345, 505 342" fill="none"/>
+  </g>
+
+</svg>
