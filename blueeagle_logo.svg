@@ -1,90 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 256" width="2048" height="1024">
-  <title>BLUEEAGLE Logo - Pixelated Dark Blue Eagle</title>
-  <desc>An emblem of a right-facing eagle with wings spread wide, rendered in slightly pixelated dark blue shades.</desc>
+  <title>BLUEEAGLE Logo - Smooth Vector Eagle with Subtle Pixelation</title>
+  <desc>A right-facing eagle with wings spread, rendered in smooth dark-blue vector shapes with slight pixel accents.</desc>
 
   <defs>
+    <linearGradient id="wingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E2E5E"/>
+      <stop offset="60%" stop-color="#1F4F99"/>
+      <stop offset="100%" stop-color="#2B63B8"/>
+    </linearGradient>
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1D39"/>
+      <stop offset="100%" stop-color="#153E7A"/>
+    </linearGradient>
+    <linearGradient id="headGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F4F99"/>
+      <stop offset="100%" stop-color="#255CAD"/>
+    </linearGradient>
     <style>
-      .pixel { shape-rendering: crispEdges; }
+      .soft { shape-rendering: auto; }
+      .pixel-accent { shape-rendering: crispEdges; }
     </style>
   </defs>
 
   <!-- Transparent background -->
-  <rect x="0" y="0" width="512" height="256" fill="none" />
+  <rect x="0" y="0" width="512" height="256" fill="none"/>
 
-  <!-- Palette reference (not rendered) -->
-  <!--
-    darkest: #0B1D39
-    deep:    #0E2E5E
-    dark:    #153E7A
-    mid:     #1F4F99
-    light:   #2B63B8
-    eye:     #DCEBFF
-    eye2:    #6FA8FF
-  -->
+  <g id="eagle" class="soft" fill-rule="evenodd">
+    <!-- LEFT WING (smooth, feathered edge) -->
+    <path fill="url(#wingGradient)" d="M230,118
+      C185,106 138,86 80,62
+      C74,59 70,58 66,62
+      C62,66 65,72 72,77
+      C110,104 136,119 152,130
+      C168,142 178,151 182,158
+      C186,165 187,171 182,176
+      C177,181 166,180 150,173
+      C126,162 106,150 86,137
+      C80,133 74,136 75,142
+      C76,149 83,156 98,166
+      C128,187 168,203 202,205
+      C225,206 238,196 244,184
+      C250,172 250,160 244,148
+      C240,138 235,128 230,118Z"/>
 
-  <g id="eagle" class="pixel">
-    <!-- LEFT WING (upper rows) -->
-    <rect x="64"  y="56"  width="152" height="8" fill="#0E2E5E"/>
-    <rect x="80"  y="64"  width="144" height="8" fill="#103362"/>
-    <rect x="88"  y="72"  width="136" height="8" fill="#153E7A"/>
-    <rect x="96"  y="80"  width="128" height="8" fill="#1A4587"/>
-    <rect x="104" y="88"  width="120" height="8" fill="#1F4F99"/>
-    <rect x="112" y="96"  width="112" height="8" fill="#255CAD"/>
-    <rect x="120" y="104" width="104" height="8" fill="#2B63B8"/>
+    <!-- RIGHT WING (smooth, feathered edge) -->
+    <path fill="url(#wingGradient)" d="M282,118
+      C327,106 374,86 432,62
+      C438,59 442,58 446,62
+      C450,66 447,72 440,77
+      C402,104 376,119 360,130
+      C344,142 334,151 330,158
+      C326,165 325,171 330,176
+      C335,181 346,180 362,173
+      C386,162 406,150 426,137
+      C432,133 438,136 437,142
+      C436,149 429,156 414,166
+      C384,187 344,203 310,205
+      C287,206 274,196 268,184
+      C262,172 262,160 268,148
+      C272,138 277,128 282,118Z"/>
 
-    <!-- LEFT WING (lower rows / feather taper) -->
-    <rect x="128" y="112" width="96"  height="8" fill="#224B8F"/>
-    <rect x="136" y="120" width="88"  height="8" fill="#1B3F7C"/>
-    <rect x="144" y="128" width="80"  height="8" fill="#123665"/>
-    <rect x="152" y="136" width="72"  height="8" fill="#0E2E5E"/>
-
-    <!-- RIGHT WING (upper rows) -->
-    <rect x="264" y="56"  width="152" height="8" fill="#0E2E5E"/>
-    <rect x="264" y="64"  width="144" height="8" fill="#103362"/>
-    <rect x="264" y="72"  width="136" height="8" fill="#153E7A"/>
-    <rect x="264" y="80"  width="128" height="8" fill="#1A4587"/>
-    <rect x="264" y="88"  width="120" height="8" fill="#1F4F99"/>
-    <rect x="264" y="96"  width="112" height="8" fill="#255CAD"/>
-    <rect x="264" y="104" width="104" height="8" fill="#2B63B8"/>
-
-    <!-- RIGHT WING (lower rows / feather taper) -->
-    <rect x="264" y="112" width="96"  height="8" fill="#224B8F"/>
-    <rect x="264" y="120" width="88"  height="8" fill="#1B3F7C"/>
-    <rect x="264" y="128" width="80"  height="8" fill="#123665"/>
-    <rect x="264" y="136" width="72"  height="8" fill="#0E2E5E"/>
-
-    <!-- BODY CORE -->
-    <rect x="224" y="88"  width="56" height="16" fill="#1F4F99"/>
-    <rect x="232" y="104" width="64" height="40" fill="#0E2E5E"/>
-    <rect x="240" y="144" width="40" height="16" fill="#0B1D39"/>
-
-    <!-- TAIL FEATHERS (slightly pixel-stepped) -->
-    <rect x="216" y="152" width="16" height="8" fill="#103362"/>
-    <rect x="208" y="160" width="24" height="8" fill="#153E7A"/>
-    <rect x="216" y="168" width="16" height="8" fill="#103362"/>
-
-    <!-- NECK / SHOULDER TRANSITION -->
-    <rect x="288" y="104" width="8"  height="24" fill="#153E7A"/>
-    <rect x="296" y="104" width="8"  height="24" fill="#1F4F99"/>
+    <!-- BODY & NECK -->
+    <path fill="url(#bodyGradient)" d="M214,122
+      C214,107 227,96 246,96
+      L270,96
+      C290,96 304,107 304,122
+      L304,150
+      C304,170 286,188 262,192
+      L250,194
+      C226,198 210,184 210,166
+      Z"/>
 
     <!-- HEAD (right-facing) -->
-    <rect x="304" y="96"  width="24" height="24" fill="#255CAD"/>
-    <rect x="328" y="108" width="12" height="8"  fill="#2B63B8"/>
+    <path fill="url(#headGradient)" d="M304,104
+      C316,96 334,96 344,104
+      C352,110 358,118 358,126
+      C358,134 352,142 344,148
+      C337,154 324,154 314,148
+      C306,142 302,136 302,128
+      C302,120 296,116 296,116
+      C298,112 300,108 304,104Z"/>
 
-    <!-- Eye (looking right) -->
-    <rect x="320" y="104" width="4" height="4" fill="#DCEBFF"/>
-    <rect x="322" y="106" width="2" height="2" fill="#6FA8FF"/>
+    <!-- Slight blue beak profile (still monochrome) -->
+    <path fill="#2B63B8" d="M356,126
+      C368,126 374,126 384,122
+      C386,121 386,119 384,118
+      C374,114 368,114 356,114
+      C356,118 356,122 356,126Z"/>
 
-    <!-- Pixel accents for subtle jagged edges -->
-    <rect x="112" y="60" width="8" height="8" fill="#0B1D39" opacity="0.4"/>
-    <rect x="176" y="92" width="8" height="8" fill="#0B1D39" opacity="0.35"/>
-    <rect x="376" y="84" width="8" height="8" fill="#0B1D39" opacity="0.35"/>
-    <rect x="296" y="152" width="8" height="8" fill="#0B1D39" opacity="0.35"/>
+    <!-- Eye looking right -->
+    <circle cx="336" cy="124" r="5" fill="#DCEBFF"/>
+    <circle cx="338.5" cy="124" r="2.5" fill="#6FA8FF"/>
+
+    <!-- Tail (layered) -->
+    <path fill="#103362" d="M210,166
+      C200,172 190,180 186,188
+      C184,192 186,196 192,196
+      L212,196
+      C220,196 230,192 238,188
+      C244,184 246,178 244,172
+      C240,170 232,168 224,168
+      C218,168 214,167 210,166Z"/>
   </g>
 
-  <!-- Subtle brand label (non-intrusive, optional to remove) -->
+  <!-- Subtle pixel accents -->
+  <g class="pixel-accent" opacity="0.35">
+    <rect x="108" y="70" width="8" height="8" fill="#0B1D39"/>
+    <rect x="392" y="74" width="8" height="8" fill="#0B1D39"/>
+    <rect x="300" y="190" width="6" height="6" fill="#0B1D39"/>
+    <rect x="188" y="186" width="6" height="6" fill="#0B1D39"/>
+  </g>
+
+  <!-- Brand label (optional) -->
   <g aria-hidden="true" fill="#0E2E5E" opacity="0.75">
-    <text x="8" y="244" font-family="'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif" font-size="12" letter-spacing="2" >BLUEEAGLE</text>
+    <text x="8" y="244" font-family="'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif" font-size="12" letter-spacing="2">BLUEEAGLE</text>
   </g>
 </svg>
