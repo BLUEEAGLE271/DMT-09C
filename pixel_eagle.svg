@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="1600" height="1000">
+  <title>Pixelated Eagle</title>
+  <desc>A strongly pixelated eagle with wings spread and head facing right, using a 32x20 pixel grid.</desc>
+  <defs>
+    <style>
+      .px { shape-rendering: crispEdges; }
+    </style>
+  </defs>
+
+  <!-- Transparent background -->
+  <rect x="0" y="0" width="320" height="200" fill="none"/>
+
+  <!-- Pixel grid scaled: each pixel = 10x10 units -->
+  <g class="px" transform="translate(0,0) scale(10)">
+    <!-- Palette -->
+    <!-- darkBrown: #4B2E19, midBrown: #6B3E23, white: #F7F7F7, beak: #F2C230, eye: #1A1A1A, shadow: #D9D9D9 -->
+
+    <!-- WINGS (top rows, mid brown) -->
+    <rect x="2" y="6" width="5" height="1" fill="#6B3E23"/>
+    <rect x="25" y="6" width="5" height="1" fill="#6B3E23"/>
+
+    <rect x="3" y="7" width="5" height="1" fill="#6B3E23"/>
+    <rect x="24" y="7" width="5" height="1" fill="#6B3E23"/>
+
+    <rect x="4" y="8" width="7" height="1" fill="#6B3E23"/>
+    <rect x="21" y="8" width="7" height="1" fill="#6B3E23"/>
+
+    <!-- WINGS (lower rows, dark brown) -->
+    <rect x="5" y="9" width="8" height="1" fill="#4B2E19"/>
+    <rect x="19" y="9" width="8" height="1" fill="#4B2E19"/>
+
+    <rect x="6" y="10" width="7" height="1" fill="#4B2E19"/>
+    <rect x="19" y="10" width="7" height="1" fill="#4B2E19"/>
+
+    <rect x="7" y="11" width="6" height="1" fill="#4B2E19"/>
+    <rect x="19" y="11" width="6" height="1" fill="#4B2E19"/>
+
+    <rect x="8" y="12" width="6" height="1" fill="#4B2E19"/>
+    <rect x="18" y="12" width="6" height="1" fill="#4B2E19"/>
+
+    <rect x="9" y="13" width="6" height="1" fill="#4B2E19"/>
+    <rect x="17" y="13" width="6" height="1" fill="#4B2E19"/>
+
+    <!-- BODY (dark brown core) -->
+    <rect x="13" y="9" width="5" height="1" fill="#4B2E19"/>
+    <rect x="14" y="10" width="4" height="1" fill="#4B2E19"/>
+    <rect x="14" y="11" width="4" height="1" fill="#4B2E19"/>
+    <rect x="14" y="12" width="4" height="1" fill="#4B2E19"/>
+    <rect x="14" y="13" width="4" height="1" fill="#4B2E19"/>
+    <rect x="14" y="14" width="3" height="1" fill="#4B2E19"/>
+
+    <!-- HEAD (white, right-facing) -->
+    <rect x="18" y="9" width="3" height="1" fill="#F7F7F7"/>
+    <rect x="18" y="10" width="3" height="1" fill="#F7F7F7"/>
+    <rect x="18" y="11" width="2" height="1" fill="#F7F7F7"/>
+
+    <!-- Neck transition -->
+    <rect x="17" y="12" width="2" height="1" fill="#D9D9D9"/>
+
+    <!-- EYE -->
+    <rect x="20" y="10" width="1" height="1" fill="#1A1A1A"/>
+
+    <!-- BEAK -->
+    <rect x="21" y="10" width="2" height="1" fill="#F2C230"/>
+    <rect x="21" y="11" width="1" height="1" fill="#F2C230"/>
+
+    <!-- TAIL -->
+    <rect x="13" y="15" width="3" height="1" fill="#4B2E19"/>
+    <rect x="12" y="16" width="3" height="1" fill="#4B2E19"/>
+    <rect x="12" y="17" width="2" height="1" fill="#4B2E19"/>
+  </g>
+</svg>
